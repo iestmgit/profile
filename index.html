@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>پروفایل رادمهر اصغری</title>
     <style>
+        :root {
+            --accent-green: #24b67e;
+            --link-blue: #4a90e2;
+            --text-gray: #707579;
+        }
+
         body {
             margin: 0;
             display: flex;
@@ -12,23 +18,23 @@
             align-items: center;
             min-height: 100vh;
             background-color: #f0f2f5;
-            font-family: Tahoma, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
         }
 
-        .card {
+        .profile-card {
             background: white;
-            padding: 30px;
-            border-radius: 15px;
+            padding: 35px;
+            border-radius: 18px;
             text-align: center;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            width: 380px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+            width: 400px;
         }
 
-        .avatar-box {
+        .avatar-wrapper {
             position: relative;
-            width: 130px;
-            height: 130px;
-            margin: 0 auto 20px;
+            width: 140px;
+            height: 140px;
+            margin: 0 auto 25px;
         }
 
         .profile-img {
@@ -36,29 +42,29 @@
             height: 100%;
             border-radius: 50%;
             object-fit: cover;
-            border: 2px solid #eee;
+            border: 2px solid #f0f0f0;
         }
 
-        .edit-btn {
+        .edit-badge {
             position: absolute;
-            bottom: 5px;
-            right: 5px;
-            background: #24b67e;
-            width: 35px;
-            height: 35px;
+            bottom: 8px;
+            right: 8px;
+            background-color: var(--accent-green);
+            width: 38px;
+            height: 38px;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 4px solid white;
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 18px;
+            font-size: 20px;
         }
 
-        .name-container {
-            font-size: 19px;
+        .name-row {
+            font-size: 20px;
             margin-bottom: 15px;
-            color: #222;
+            color: #1c1c1c;
             font-style: italic;
             display: flex;
             align-items: center;
@@ -66,46 +72,45 @@
             gap: 5px;
         }
 
-        .details {
-            color: #707579;
-            font-size: 16px;
+        .info-row {
+            color: var(--text-gray);
+            font-size: 17px;
             direction: ltr;
         }
 
-        .ble-url {
-            color: #4a90e2;
+        .ble-link {
+            color: var(--link-blue);
             text-decoration: none;
             font-weight: bold;
-            margin-left: 8px;
         }
 
-        .ble-url:hover {
+        .ble-link:hover {
             text-decoration: underline;
         }
 
-        .divider {
-            margin: 0 8px;
-            color: #ccc;
+        .separator {
+            margin: 0 10px;
+            color: #ddd;
         }
     </style>
 </head>
 <body>
 
-    <div class="card">
-        <div class="avatar-box">
-            <!-- لینک Blob درخواستی شما -->
-            <img src="1780674535573.jpg">
-            <div class="edit-btn">✎</div>
+    <div class="profile-card">
+        <div class="avatar-wrapper">
+            <!-- آدرس مستقیم عکس از گیت‌هاب iestmgit -->
+            <img src="https://raw.githubusercontent.com/iestmgit/profile/main/1780674535573.jpg" alt="Radmehr Asghari" class="profile-img">
+            <div class="edit-badge">✎</div>
         </div>
 
-        <div class="name-container">
+        <div class="name-row">
             🤝🏆¯\_(ツ)_/¯ <i>radmehr asghari</i> ¯\_(ツ)_/¯🏆🤝
         </div>
 
-        <div class="details">
+        <div class="info-row">
             <span>+989398212260</span>
-            <span class="divider">|</span>
-            <a href="https://ble.ir/radmehrasghari" target="_blank" class="ble-url">
+            <span class="separator">|</span>
+            <a href="https://ble.ir/radmehrasghari" target="_blank" class="ble-link">
                 @radmehrasghari
             </a>
         </div>
